@@ -1,0 +1,730 @@
+
+
+'.text.html.basic': # Only declare each scope once!
+
+    'angular pluralize':
+        'prefix': 'ngplur'
+        'body': 'ng-pluralize count="$1" when="{\'one\': \'$2\', \'other\': \'$3\'}"'
+
+    'ng-view':
+        'prefix': 'ngv'
+        'body': 'ng-view'
+
+    'ng-pattern':
+        'prefix': 'ngpat'
+        'body': 'ng-pattern="$1"$2'
+
+    'ng-minlength':
+        'prefix': 'ngmin'
+        'body': 'ng-minlength="$1"$2'
+
+    'ng-maxlength':
+        'prefix': 'ngmax'
+        'body': 'ng-maxlength="$1"$2'
+
+    'ng-submit':
+        'prefix': 'ngsub'
+        'body': 'ng-submit="$1"$2'
+
+    'ng-mouseenter':
+        'prefix': 'mouseenter'
+        'body': 'ng-mouseenter="$1"$2'
+
+    'ng-click':
+        'prefix': 'click'
+        'body': 'ng-click="$1"$2'
+
+    'ng-controller':
+        'prefix': 'ngcon'
+        'body': 'ng-controller="$1"$2'
+
+    'ng-class':
+        'prefix': 'ngclass'
+        'body': 'ng-class="{\'${1:class}\': $2 ${3:===} $4}"$5'
+
+    'ng-show':
+        'prefix': 'ngs'
+        'body': 'ng-show="${1:$2 ${3:===} $4}"$5'
+
+    'ng-hide':
+        'prefix': 'ngh'
+        'body': 'ng-hide="$1 ${2:===} $3"$4'
+
+    'ng-init':
+        'prefix': 'ngi'
+        'body': 'ng-init="$1 = $2"$3'
+
+    'ng-repeat':
+        'prefix': 'ngr'
+        'body': 'ng-repeat="$1 in ${2:$1s} ${3:track by $index}"$4'
+
+    'ng-model':
+        'prefix': 'ngm'
+        'body': 'ng-model="$1"'
+
+    'ui-router CDN':
+        'prefix': 'uirouter'
+        'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>'
+
+    'ngRoute CDN':
+        'prefix': 'ngRoute'
+        'body': '<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>'
+
+    'ngAnimate CDN':
+        'prefix': 'nganimate'
+        'body': '<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>'
+
+    'socket.io CDN':
+        'prefix': 'socketiocdn'
+        'body': '<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>'
+
+    'angular app':
+        'prefix': 'angular'
+        'body': '''
+                <!DOCTYPE html>
+                <html lang="en" ng-app="$1">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>$2</title>
+                    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+
+                    <link rel="stylesheet" href="css/style.css">
+                    <script src="js/app.js"></script>
+                    <script src="js/controllers.js"></script>
+                    <script src="js/directives.js"></script>
+                    <script src="js/services.js"></script>
+                    <script src="js/filters.js"></script>
+                </head>
+                <body>$3
+                </body>
+                </html>
+                '''
+
+    'angular express app':
+        'prefix': 'ngex'
+        'body': '''
+                <!DOCTYPE html>
+                <html lang="en" ng-app="$1">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>$2</title>
+                    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+
+                    <link rel="stylesheet" href="stylesheets/style.css">
+                    <script src="javascripts/main.js"></script>
+                    <script src="javascripts/controllers.js"></script>
+                    <script src="javascripts/directives.js"></script>
+                    <script src="javascripts/services.js"></script>
+                    <script src="javascripts/filters.js"></script>
+                </head>
+                <body>$3
+                </body>
+                </html>
+                '''
+
+    'angular express app':
+        'prefix': 'ngex'
+        'body': '''
+                <!DOCTYPE html>
+                <html lang="en" ng-app="$1">
+                <head>
+                    <meta charset="UTF-8">
+                    <title>$2</title>
+                    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+
+                    <link rel="stylesheet" href="stylesheets/style.css">
+                    <script src="javascripts/main.js"></script>
+                    <script src="javascripts/controllers.js"></script>
+                    <script src="javascripts/directives.js"></script>
+                    <script src="javascripts/services.js"></script>
+                    <script src="javascripts/filters.js"></script>
+                </head>
+                <body>$3
+                </body>
+                </html>
+                '''
+
+    'jQuery':
+        'prefix': 'jquery'
+        'body': '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>'
+
+    'Bootstrap':
+        'prefix': 'bootstrap'
+        'body': '''
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                '''
+
+    'moment CDN':
+        'prefix': 'moment'
+        'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>'
+
+    'animate.css CDN':
+        'prefix': 'animatecss'
+        'body': '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">'
+
+    'Font Awesome':
+        'prefix': 'fa'
+        'body': '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">'
+
+    'ng resource CDN':
+        'prefix': 'ngresource'
+        'body': '<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-resource.js"></script>'
+
+    'x2js CDN':
+        'prefix': 'x2js'
+        'body': '<script src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js"></script>'
+
+    'ejs bracket':
+        'prefix': 'ejs'
+        'body': '<%$1 %>'
+
+    'angular brackets':
+        'prefix': 'bind'
+        'body': '{{ $1 }}$2'
+
+    'html escape chars':
+        'prefix': 'esc'
+        'body': '&$1;$2'
+
+    'id':
+        'prefix': 'id'
+        'body': 'id="$1"$2'
+
+    'class':
+        'prefix': 'class'
+        'body': 'class="$1"$2'
+
+
+
+
+
+'.text.html.handlebars': # Only declare each scope once!
+    'jQuery':
+        'prefix': 'jquery'
+        'body': '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>'
+
+    'Bootstrap':
+        'prefix': 'bootstrap'
+        'body': '''
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                '''
+
+    'Font Awesome':
+        'prefix': 'fa'
+        'body': '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">'
+
+    'handlebars mustache':
+        'prefix': 'h'
+        'body': '{{ $1 }}$2'
+
+    'handlebars helper':
+        'prefix': 'hh'
+        'body': '{{# $1}}$2'
+
+    'handlebars partial':
+        'prefix': 'hp'
+        'body': '{{> $1}}$2'
+
+    'handlebars lookup':
+        'prefix': 'lookup'
+        'body': '{{lookup ${1:object} ${2:key}}}$3'
+
+
+
+
+
+'.source.js': # Only declare each scope once!
+
+    'selenium config':
+        'prefix': 'selenium'
+        'body':"""
+               module.exports.config = {
+                    framework: 'jasmine',
+                    seleniumAddress: 'http://localhost:4444/wd/hub',
+                    specs: [${1:'spec.js'}]
+               };$2
+               """
+
+    'use chai':
+        'prefix': 'chai'
+        'body': """
+                var chai = require('chai');
+                ${1:var assert = chai.assert;}
+                ${2:var expect = chai.expect;}
+                ${3:var should = chai.should();}
+                """
+
+    'describe block':
+        'prefix': 'desc'
+        'body': """
+                describe('$1', function(){
+                  $2
+                });
+                """
+
+    'it block':
+        'prefix': 'it'
+        'body': """
+                it('$1', function(){
+                  $2
+                });
+                """
+
+    'angular dependency injector':
+        'prefix': 'inject'
+        'body': "$1.$inject = ['$2'$3]$4;"
+
+    'angular factory':
+        'prefix': 'ngfactory'
+        'body': """
+                app.factory('$1', $1);
+                function $1 ($2) {
+                    return { // return an object
+                        $3
+                    };
+                }
+                $1.$inject = ['$2'];
+                """
+
+    'angular custom directive':
+        'prefix': 'ngdir'
+        'body': """
+                app.directive('$1', function() {
+                    return {
+                        ${6:templateUrl: '$2',}
+                        ${7:restrict: '$3',}
+                        ${8:scope: \\\{$4\\\},}
+                        ${9:controller: $5}
+                    };
+                });$10
+                """
+
+    'angular link':
+        'prefix': 'nglink'
+        'body': """
+                link: function (${1:scope} ${2:, element} ${3:, attrs}) {
+                  $4
+                }
+                """
+
+    'angular filter':
+        'prefix': 'ngfilter'
+        'body': """
+                app.filter('$1', function() {
+                    return function($2) {
+                        $3
+                    }
+                });
+                """
+
+    '$http get':
+        'prefix': 'nghttp'
+        'body': """
+                $http.${1:get}('$2')
+                    .then(function(data){
+                      $3
+                    })
+                """
+
+    'angular app config':
+        'prefix': 'ngappconfig'
+        'body': """
+                app.config(function(${1:$routeProvider}) {
+                    ${1:$routeProvider}$2
+                });
+                """
+
+    'ng router when':
+        'prefix': 'when'
+        'body': """
+                when('/$1', {
+                  ${5:templateUrl: '${4:partials}/$1.html'}${6:,
+                  controller: '$2'}
+                })$3$7
+                """
+
+    'ng router otherwise':
+        'prefix': 'otherwise'
+        'body': """
+                otherwise( {
+                  redirectTo : '/$1'
+                });$2
+                """
+
+    'ui router state':
+        'prefix': 'state'
+        'body': """
+                state('$1', {
+                  url: '/$1',
+                  templateUrl: 'partials/$1.html'${3:,
+                  controller: $2}
+                })
+                """
+
+    '$scope':
+        'prefix': 'scope'
+        'body': '$scope.${1:$2 = $3;}$4'
+
+    'angular app':
+        'prefix': 'ngapp'
+        'body': "var app = angular.module('$1', [$2]);$3"
+
+    'angular service':
+        'prefix': 'ngservice'
+        'body': """
+                app.service('$1', $1);
+                function $1 ($2) {
+                    $3
+                }
+                $1.$inject = ['$2']
+                """
+
+    'angular controller':
+        'prefix': 'ngcontroller'
+        'body': """
+                app.controller('$1', $1);
+                function $1 ($2) {
+                    $3
+                }
+                $1.$inject = ['$2'];
+                """
+
+    'xhr onreadystatechange':
+        'prefix': 'orsc'
+        'body': """
+                ${1:xhr}.onreadystatechange = function() {
+                  ${2:if (${1:xhr}.readyState === 4) {
+                    ${3:if (${1:xhr}.status === ${4:200}) {
+                        $5
+                    \\}}
+                  \\}}
+                };$6
+                """
+
+
+    'pg module setup':
+        'prefix': 'pg'
+        'body': """
+                var pg = require('pg');
+                var client = new pg.Client('${1:postgres://localhost:5432/${2:database}}');
+                client.connect();$3
+                """
+
+    'new XMLHttpRequest':
+        'prefix': 'xhr'
+        'body': """
+                var ${1:xhr} = new XMLHttpRequest();
+                ${1:xhr}.open('${2:GET}', ${3:'${4:url}'});
+                ${1:xhr}.onreadystatechange = () => {
+                    if (${1:xhr}.readyState === 4) {
+                        if (${1:xhr}.status === 200) {
+                          ${5:// Do stuff on completion}
+                        }
+                    }
+                };
+                ${1:xhr}.send();$6
+                """
+
+    'node http get':
+        'prefix': 'nget'
+        'body': """
+                http.get('http://${1:url}', (res) => {
+                    var data = [];
+                    res.on('data', (chunk) => {
+                        data.push(chunk);
+                    });
+                    res.on('end', () => {
+                        $2console.log(data.join('').toString());
+                    });
+                });
+                """
+
+    'configure dotenv':
+        'prefix': 'dotenv'
+        'body': "require('dotenv').config()"
+
+    'http cat':
+        'prefix': 'kitty'
+        'body': "'https://http.cat/${1:200}'"
+
+    'knex inner join':
+        'prefix': 'ij'
+        'body': "innerJoin('$1', '$2', '$3')$4"
+
+    'knex config':
+        'prefix': 'knexconfig'
+        'body': "var knex = require('knex')(require('${1:.}/knexfile.js').${2:development})"
+
+    'knex createTable':
+        'prefix': 'ctable'
+        'body': """
+                .createTable('${1:tableName}', function(table) {
+                    ${2:table.increments();}
+                    $3
+                })
+                """
+
+    'chainable then':
+        'prefix': 'then'
+        'body': """
+                then(function(${1:data}) {
+                  $2
+                })$3
+                """
+
+    'bcrypt compare':
+        'prefix': 'comp'
+        'body': 'bcrypt.compareSync(${1:plaintext}, ${2:hash})'
+
+    'bcrypt hash':
+        'prefix': 'hash'
+        'body': 'bcrypt.hashSync(${1:string},${2:8});'
+
+
+    'express-hbs':
+        'prefix': 'exhbs'
+        'body': """
+                  var hbs = require('express-hbs');
+                  app.engine('hbs', hbs.express4({
+                    partialsDir: __dirname + '/views/partials',
+                    defaultLayout: __dirname + '/views/layout.hbs'
+                    }));
+                """
+
+    'use pg client':
+        'prefix': 'pg'
+        'body': """
+                var pg = require('pg');
+                var client = new pg.Client('${1:postgres://localhost:5432/${2:database}}');
+                client.connect();
+                """
+
+    'process.stdin':
+        'prefix': 'stdin'
+        'body': 'process.stdin'
+
+    'process.stdout':
+        'prefix': 'stdout'
+        'body': 'process.stdout'
+
+    'handle error':
+        'prefix': 'iferr'
+        'body': """
+                if (err) {
+                  throw err;
+                }
+                """
+
+    'http.createServer':
+        'prefix': 'server'
+        'body': """var server = http.createServer(function(req, res) {
+                  $1
+                });"""
+
+
+    'express router':
+        'prefix': 'xrouter'
+        'body': """
+                var express = require('express');
+                var router = express.Router();
+                $1
+                module.exports = router;
+                """
+
+    'express get':
+        'prefix': 'xget'
+        'body': """
+                ${1:router}.${2:get}('/$3', function(req, res, next){
+                  $4
+                });"""
+
+    'express post':
+        'prefix': 'xpost'
+        'body': """
+                ${1:router}.${2:post}('/$3', function(req, res, next){
+                  $4
+                });"""
+
+    'express use':
+        'prefix': 'xuse'
+        'body': """
+                ${1:app}.use(${2:'/$3', }${4:function(req, res, next)\\\{
+                  $5
+                \\\}});"""
+
+    'node file system module':
+        'prefix': 'fs'
+        'body': "var fs = require('fs');"
+
+    'node readFile':
+        'prefix': 'readfile'
+        'body': """
+                fs.readFile('$1', function(err, data) {
+                    if (err) {
+                        throw err;
+                    }
+                    $2
+                });
+                  """
+
+    'node witeFile':
+        'prefix': 'writefile'
+        'body': """
+                fs.writeFile('$1', $2, function(err) {
+                    if (err) {
+                        throw err;
+                    }
+                });
+                  """
+
+    'node appendFile':
+        'prefix': 'fsappend'
+        'body': """
+                fs.appendFile('$1', $2, function(err) {
+                    if (err) {
+                        throw err;
+                    }
+                });
+                  """
+
+    'node http module':
+        'prefix': 'http'
+        'body': "var http = require('http');"
+
+    'JSON Web token':
+        'prefix': 'usejwt'
+        'body': "var jwt = require('jsonwebtoken');"
+
+    'express bearer token':
+        'prefix': 'xbearer'
+        'body': "var bearerToken = require('express-bearer-token');"
+
+    'jQuery Object':
+        'prefix': '$'
+        'body': "$('$1')$2"
+
+    'jQuery Ajax Search':
+        'prefix' : 'ajax'
+        'body' : """
+                 $.ajax({
+                   method: 'GET',
+                   dataType: 'json',
+                   url: '$1'
+                   })
+                   """
+
+    'Helper Functions':
+        'prefix': 'helpers'
+        'body' : '''
+                 // ================
+                 // Helper Functions
+                 // ================
+                 '''
+
+    'Global Variables':
+        'prefix': 'gvars'
+        'body': '''
+                // ================
+                // Global Variables
+                // ================
+                '''
+
+    'Arrow Function':
+        'prefix': 'arrow'
+        'body': '${1:($2)} => ${3:{$4\\\}}'
+
+    'array.map method':
+        'prefix': 'map'
+        'body' : """
+                 map(${1:callback} ${2:, thisArg});
+
+                 function ${1:callback}(${3:currentValue} ${4:, index} ${5:, array}) {
+                    $6
+                 }$7
+                 """
+
+    'array.reduce method':
+        'prefix': 'reduce'
+        'body' : """
+                 reduce(${1:callback} ${2:, initialValue});
+
+                 function ${1:callback}(${3:previousValue}${4:, currentValue}${5:, index}${6:, array}) {
+                    $7
+                 }$8
+                 """
+
+    'jQuery "this"':
+        'prefix': 'jthis'
+        'body': '$(this)'
+
+    'Document Ready':
+        'prefix': 'docready'
+        'body': '$(document).ready(function() {$1});'
+
+    'jQuery click handler':
+        'prefix': 'click'
+        'body': "$('$1').on('click', function() {$2});"
+
+    'jQuery event handler ':
+        'prefix': 'jon'
+        'body': "${2:$('$1')}.on('$3', function(${4:event}) {$5});"
+
+    'postgreSQL default url':
+        'prefix': 'pgdef
+'
+        'body': "'postgres://localhost:5432/${1:database}'"
+
+    'labeled log':
+        'prefix': 'llog'
+        'body': "console.log('$1:', ${2:$1});$3"
+
+
+
+
+
+'.source.sql': # Only declare each scope once!
+    'create table':
+        'prefix': 'createtable'
+        'body': """
+                CREATE TABLE $1 (
+                  id serial PRIMARY KEY,
+                  $2
+                );
+                """
+
+    'create database':
+        'prefix': 'createdatabase'
+        'body': "CREATE DATABASE $1;$2"
+
+    'insert row':
+        'prefix': 'ins'
+        'body': """
+                INSERT INTO $1
+                  VALUES ($2);
+                """
+    'Snippet Name':
+        'prefix': 'var'
+        'body': 'varchar($1)$2'
+
+
+
+
+
+'.source.css':
+    'Josh\'s Basic Reset':
+        'prefix': 'reset'
+        'body': """
+                * {
+                  box-sizing: border-box;
+                  margin: 0;
+                  padding: 0;
+                }
+                body {
+                  width: 100vw;
+                  height: 100vh;
+                }
+                """
